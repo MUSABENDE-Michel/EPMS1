@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<meta name="theme-color" content="#000000" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta
+      name="description"
+      content="SmartPark Employee Payroll Management System - Complete payroll solution for SmartPark"
+    />
+    <meta name="author" content="MUSABENDE Michel" />
+    <meta name="exam" content="National Practical Exam 2025" />
+
+    <title>SmartPark EPMS | Employee Payroll Management System</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .loading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-bottom: 20px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loading-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .loading-subtitle {
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      .loading-footer {
+        position: absolute;
+        bottom: 20px;
+        font-size: 0.75rem;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div
+        style="
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #f3f4f6;
+          padding: 20px;
+        "
+      >
+        <div
+          style="
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <div style="font-size: 48px; margin-bottom: 20px">⚠️</div>
+          <h1
+            style="
+              font-size: 24px;
+              font-weight: 600;
+              color: #1f2937;
+              margin-bottom: 12px;
+            "
+          >
+            JavaScript Required
+          </h1>
+          <p style="color: #6b7280; margin-bottom: 24px; line-height: 1.5">
+            Please enable JavaScript to run the SmartPark Employee Payroll
+            Management System.
+          </p>
+        </div>
+      </div>
+    </noscript>
+
+    <div id="root">
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <div class="loading-title">SmartPark EPMS</div>
+        <div class="loading-subtitle">Employee Payroll Management System</div>
+        <div class="loading-footer">
+          National Practical Exam 2025 | MUSABENDE Michel
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
